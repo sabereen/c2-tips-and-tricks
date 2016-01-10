@@ -1,0 +1,30 @@
+{
+  "name": "c2-tips-and-tricks",
+  "description": "Construct2.ir Ejournal",
+  "main": "index.js",
+  "authors": [
+    "Construct2.ir"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "ejournal",
+    "construct2",
+    "game",
+    "making"
+  ],
+  "homepage": "https://github.com/sabereen/c2-tips-and-tricks",
+  "moduleType": [],
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-material": "~1.0.1",
+    "nedb": "~1.4.2",
+	"angular": "~1.4.8"
+  }
+}
