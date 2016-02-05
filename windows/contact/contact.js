@@ -1,0 +1,1 @@
+"use strict";angular.module("c2tips").register.controller("ContactWindowController",["$window",function(t){this.submit=function(){t.alert("هنوز قابلیت ثبت پیام پیاده‌سازی نشده")}}]);

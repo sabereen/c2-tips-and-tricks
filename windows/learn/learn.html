@@ -1,0 +1,1 @@
+<md-content class="view-list" flex="80" layout="column"><md-list><md-subheader>آموزش‌ها</md-subheader><md-list-item ng-repeat="item in learn.list" ng-click="learn.goTo(item._id)">{{item.title}}</md-list-item></md-list><md-content ng-bind-html="item.content"></md-content></md-content>

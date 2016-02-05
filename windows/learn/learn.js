@@ -1,0 +1,1 @@
+"use strict";angular.module("c2tips").register.controller("LearnWindowController",["$sce","$rootScope","$location","database",function(t,n,o,e){var i=this;e.setCurrent("learn"),this.list=null,e.getList(function(t,n){if(t)throw t;i.list=n}),this.goTo=function(o){e.getItem(o,function(o,e){if(o)throw o;n.item=e,n.item.content=t.trustAsHtml(e.content)})}}]);
