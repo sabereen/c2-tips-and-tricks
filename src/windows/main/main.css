@@ -1,0 +1,40 @@
+header {
+    text-align: center;
+}
+
+body {
+    overflow: hidden;
+}
+
+.left-side {
+    direction: ltr;
+}
+
+.main-buttons.main-shrink {
+    transform: scale(.8);
+    opacity: .6;
+}
+
+.main-buttons {
+    transition: transform .6s cubic-bezier(0.68, -0.55, 0.27, 1.55), opacity .6s !important;
+    transform: none;
+    width: 140px;
+    height: auto;
+    cursor: pointer;
+    opacity: 1;
+}
+
+.main-buttons:hover {
+    transform: scale(1.4);
+    opacity: 1;
+}
+
+.main-center-column {
+    text-align: center;
+}
+
+md-icon {
+	color: black;
+}
+
+.md-subheader {background: none;}

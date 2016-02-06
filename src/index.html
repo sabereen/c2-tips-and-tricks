@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html ng-app="c2tips">
+<base href="/">
+<head>
+    <meta charset="UTF-8">
+    <title>C2 tips & tricks</title>
+    <link rel="stylesheet" href="app/styles.css">
+    <!-- build:css app/general.css -->
+    <link rel="stylesheet" href="app/css/fonts.css">
+    <link rel="stylesheet" href="app/css/general.css">
+    <!-- endbuild -->
+</head>
+<body ng-controller="MainController as ctrl" dir="rtl">
+ <div ui-view class="view"></div>
+    <script src="app/angular.min.js"></script>
+    <script src="app/modules.js"></script>
+
+    <!-- Todo: remove in electron -->
+    <script src="app/libraries/nedb.js"></script>
+    <!-- end remove -->
+
+    <!-- build:js app/app.js -->
+    <script src="/app.js"></script>
+    <script src="/app/services/nw.js"></script>
+    <script src="/app/services/values.js"></script>
+    <script src="/app/services/routing.js"></script>
+    <script src="/app/services/database.js"></script>
+    <!-- endbuild -->
+</body>
+</html>

@@ -1,0 +1,12 @@
+.view-list {
+    margin: 10%;
+    margin-top: 20px;
+}
+
+.view-list md-content {
+    padding: 5px;
+}
+
+body {
+    overflow: auto;
+}

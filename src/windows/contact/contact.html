@@ -1,0 +1,30 @@
+<div layout="column" dir="rtl">
+    <md-content layout-padding layout-margin layout-align="center">
+        <header><h1>تماس با ما</h1></header>
+        <form name="contactus">
+            <md-input-container>
+                <label>اسم</label>
+                <input name="name" required ng-model="contact.name">
+                <div ng-messages="contactus.name.$error" role="alert">
+                    <div ng-message="required">شما باید اسم خود را وارد نمایید!</div>
+                </div>
+            </md-input-container>
+            <br>
+            <md-input-container>
+                <label>ایمیل</label>
+                <input name="email" required ng-pattern="/^.+@.+\..+$/" type="email" ng-model="contact.mail">
+                <div ng-messages="contactus.email.$error" role="alert">
+                    <div ng-message-exp="['required', 'pattern', 'email']">یک آدرس ایمیل معتبر وارد کنید</div>
+                </div>
+            </md-input-container>
+            <md-input-container class="md-block">
+                <label>متن پیام</label>
+                <textarea name="message" ng-model="contact.message" rows="7" columns="1" required></textarea>
+                <div ng-messages="contactus.message.$error" role="alert">
+                    <div ng-message="required">لطفاً پیام خود را بنویسید</div>
+                </div>
+            </md-input-container>
+            <md-button class="md-raised" ng-click="contact.submit()">ارسال</md-button>
+        </form>
+    </md-content>
+</div>
