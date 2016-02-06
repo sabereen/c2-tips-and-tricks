@@ -1,1 +1,1 @@
-<md-content class="view-list" flex="80" layout="column"><md-list><md-subheader>آموزش‌ها</md-subheader><md-list-item ng-repeat="item in list.list" ng-click="list.goTo(item._id)">{{item.title}}</md-list-item></md-list></md-content>
+<md-content class="view-list" flex="80" layout="column"><md-list><md-subheader>آموزش‌ها</md-subheader><md-list-item ng-repeat="item in list.list" ui-sref="{{list.content}}({title: '{{item.title}}' })">{{item.title}}</md-list-item></md-list></md-content>

@@ -1,0 +1,1 @@
+"use strict";angular.module("c2tips").register.controller("ContentWindowController",["$stateParams","$state","$sce","database",function(t,e,n,r){var s=this;s.item=null,r.setCurrent(e.current.name),r.getItem(t.title,function(t,r){r||e.go("main"),s.item=r,s.item.content=n.trustAsHtml(r.content)})}]);

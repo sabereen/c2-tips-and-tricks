@@ -1,1 +1,1 @@
-"use strict";angular.module("c2tips").register.controller("ListWindowController",["$scope","$rootScope","database",function(t,i,e){var o=this;i.view="learn",this.list=null,e.getList("learn",function(t,i){if(t)throw t;o.list=i})}]);
+"use strict";angular.module("c2tips").register.controller("ListWindowController",["$stateParams","database",function(t,n){var s=this;this.content=t.content,n.setCurrent(this.content),this.list=null,n.getList(function(t,n){if(t)throw t;s.list=n})}]);
